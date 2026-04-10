@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logo from '../../assets/images/hero.png'
 const Banner = () => {
     return (
         <div>
@@ -10,6 +10,9 @@ const Banner = () => {
                 <p className='text-lg leading-8'>
                     At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.
                 </p>
+                <div className='flex justify-center mt-5'>
+                    <img src={logo} className='max-w-200' alt="" />
+                </div>
             </div>
         </div>
     );
