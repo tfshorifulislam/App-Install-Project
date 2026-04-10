@@ -4,15 +4,15 @@ import { NavLink } from 'react-router';
 const Navbar = () => {
 
     const link = <>
-    <li>
-        <NavLink to="/">Home</NavLink>
-    </li>
-    <li>
-        <NavLink to="/apps">Apps</NavLink>
-    </li>
-   <li>
-        <NavLink to="/installation">Installation</NavLink>
-   </li>
+        <li>
+            <NavLink className={({ isActive }) => isActive? 'text-[#632EE3]' : ''} to="/">Home</NavLink>
+        </li>
+        <li>
+            <NavLink className={({ isActive }) => isActive? 'text-[#632EE3]' : ''} to="/apps">Apps</NavLink>
+        </li>
+        <li>
+            <NavLink className={({ isActive }) => isActive? 'text-[#632EE3]' : ''} to="/installation">Installation</NavLink>
+        </li>
     </>
     return (
         <div>
