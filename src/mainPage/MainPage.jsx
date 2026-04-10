@@ -4,7 +4,7 @@ import { Outlet } from 'react-router';
 
 const MainPage = () => {
     return (
-        <div>
+        <div className='bg-[#F5F5F5] w-7xl mx-auto'>
             <Navbar />
             <Outlet />
         </div>
